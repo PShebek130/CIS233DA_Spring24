@@ -1,0 +1,58 @@
+* { 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: auto;
+}
+
+main {
+    height:80vh;
+    font-size: xx-large;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(191, 80, 80);
+    background-image: url('./image/videostore.png');
+    background-size: 80%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    background-color: rgb(35, 33, 38);
+    color: #ffffff;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#links a:visited {
+    color:#ffffff;
+}
+
+#social {
+    list-style-type: none;
+}
+
+#social li {
+    display: inline-block;
+}
+
+#images {
+    text-align: center;
+}
