@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Class Maintenance</title>
+</head>
+<body>
+    <section class="top-nav">
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+            <div class="menu-button"></div>
+        </label>
+        <ul class="menu">
+            <li><a href="class_maint.html">Class Maintenance</a></li>
+            <li><a href="student_maint.html">Student Maintenance</a></li>
+            <li><a href="attendance_taker.html">Attendance Taker</a></li>
+        </ul>
+    </section>
+
+    <main>
+        <h1>Class Maintenance</h1>
+        <div id="itemWrapper">
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <select style="width:100%">
+                        <option selected>Spring 2024</option>
+                        <option>Fall 2023</option>
+                        <option>Spring 2023</option>
+                        <option>Fall 2022</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <option>English 102</option>
+                        <option>Intro to Cinema</option>
+                        <option>CIS 162AD</option>
+                        <option>Astrology 101</option>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input 
+                            type="text" 
+                            placeholder="Enter New Class"
+                            style="width:318px;"
+                        >
+                    </td>
+                    <td>
+                        <button>Delete</button>
+                        <button>Add</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
