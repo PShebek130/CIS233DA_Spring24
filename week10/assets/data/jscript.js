@@ -42,10 +42,21 @@ function getSemester() {
     semesterList.innerHTML = semesterListOptions;
 }
 
+function getStudents(obj) {
+    const studentList = document.getElementById("studentList");
+    var studentID = obj.options[obj.selectedIndex].value;
+    const aryStudent = eval(`ary${studentID}`);
+    let studentListOptions = '';
+    aryStudent.map((op,i) => {
+        studentListOptions += `<option value="${op[0]}">${op[1]}</option>`;
+    })
+    studentList.innerHTML = studentListOptions;
+}
+
 function getClass(obj) {
     const classList = document.getElementById("classList");
     var semesterID = obj.options[obj.selectedIndex].value;
-    const aryClass = [`ary${semesterID}`];
+    const aryClass = eval(`ary${semesterID}`);
     let classListOptions = '';
     aryClass.map((op,i) => {
         classListOptions += `<option value="${op[0]}">${op[1]}</option>`;
